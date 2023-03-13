@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Sentence } from '../home/interfaces/sentence';
 
 @Component({
   selector: 'app-escena',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./escena.component.css']
 })
 export class EscenaComponent {
-
+  @Input() sentences!: Sentence[];
 }
