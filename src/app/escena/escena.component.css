@@ -5,3 +5,9 @@ p {
     text-align: center;
     background-color: #f7f1f160;
 }
+
+.colorSentence {
+    background-color: rgb(230, 158, 170);
+    border-radius: 50px;
+
+}

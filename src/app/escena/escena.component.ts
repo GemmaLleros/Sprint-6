@@ -6,6 +6,12 @@ import { Sentence } from '../home/interfaces/sentence';
   templateUrl: './escena.component.html',
   styleUrls: ['./escena.component.css']
 })
+
+
 export class EscenaComponent {
-  @Input() sentences!: Sentence[];
+  @Input() sentenceS: Sentence = { text: '' }; // Inicialización en la declaración
+
+  @Input() currentSentence!: boolean;
 }
+
+
