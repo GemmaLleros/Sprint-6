@@ -1,3 +1,4 @@
 export interface Sentence {
-    text: string    
+    text: string;
+    img: string ;
 }

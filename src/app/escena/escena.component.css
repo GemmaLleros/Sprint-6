@@ -9,5 +9,5 @@ p {
 .colorSentence {
     background-color: rgb(230, 158, 170);
     border-radius: 50px;
-
+    background-image: url('/assets/img/background.jpg');
 }

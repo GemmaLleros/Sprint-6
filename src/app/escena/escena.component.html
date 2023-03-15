@@ -1,5 +1,12 @@
 <!-- <p>"El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial"</p> -->
 <!-- <p *ngFor="let sentence of sentences; index as i ">{{sentence.text}}</p> -->
 <div [ngClass]="{'colorSentence': currentSentence}">
-    <p> {{sentenceS.text}} </p>
+    <div *ngFor="let sentence of sentenceS">
+      <p>{{ sentence.text }}</p>
+      <img *ngIf="sentence.img" [src]="sentence.img" alt="Imagen">
+    </div>
 </div>
+  
+  
+  
+
