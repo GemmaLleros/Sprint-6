@@ -1,19 +1,19 @@
 <div *ngIf="!mostrarEscena" class="welcome-container">
   <h1>Benvingut al projecte</h1>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptates
-     consectetur, rerum natus sunt delectus, beatae ad maxime harum id, quisquam
-      minima officia consequuntur accusantium illum obcaecati provident! Cum, omnis?
+    consectetur, rerum natus sunt delectus, beatae ad maxime harum id, quisquam
+    minima officia consequuntur accusantium illum obcaecati provident! Cum, omnis?
   </p>
   <button class="btn-start" (click)="mostrarEscena = true">Començar</button>
 </div>
+
+
 <div *ngIf="mostrarEscena">
   <div class="button-container d-flex">
+    <img id="bg" src="../assets/img/1.jpg" alt="">
     <button class="btn flex-fill" id="prev" (click)="prev()">Anterior</button>
     <button class="btn flex-fill" id="next" (click)="next()">Següent</button>
   </div>
-
-  <app-escena *ngFor="let sentence of sentenceS; index as i;" [sentenceS]="[sentence]" [currentSentence]="currentSentence === i"></app-escena>
-
+  <app-escena *ngFor="let sentence of sentenceS; index as i;" [sentenceS]=sentence
+    [currentSentence]="currentSentence === i"></app-escena>
 </div>
-
-

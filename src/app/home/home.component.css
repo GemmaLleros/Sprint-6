@@ -1,40 +1,54 @@
 body {
     overflow: hidden;
-}
-
-.welcome-container {
+  }
+  
+  #bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .btn {
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    background-color: rgb(237, 230, 230);
+  }
+  
+  .button-container .btn {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .welcome-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0 auto;
-    max-width: 800px; /* establece el ancho máximo del contenedor */
-    padding: 0 20px; /* establece un margen interno horizontal */     
-    background-image: url('assets/img/background.jpg');
-}
-p {
-    text-align: center;
-}
+    max-width: 800px;
+    padding: 0 20px;
+  }
   
-.btn-start {
+  p {
+    text-align: center;
+  }
+  
+  .btn-start {
     margin-top: 20px;
     font-size: 16px;
     background-color: rgb(230, 158, 170);
     border-radius: 50px;
-}
+  }
   
-.button-container {
+  .button-container {
     display: flex;
-    justify-content: space-between; /* centra horizontalmente y distribuye el espacio disponible entre los botones */
-    width: 100%; /* hace que la sección de los botones ocupe todo el ancho del navbar */
-}
-
-.btn {
+    justify-content: space-between;
     width: 100%;
-    height: 50px; 
-    border: 1px solid black;
-    margin-bottom: 5px;
-    background-color: rgb(237, 230, 230);
-    
-}
+  }

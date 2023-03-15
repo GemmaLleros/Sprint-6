@@ -9,9 +9,11 @@ import { Sentence } from '../home/interfaces/sentence';
 
 
 export class EscenaComponent {
-  @Input() sentenceS: Sentence[] = [{ text: '', img: '' }]; // Inicialización en la declaración
+  @Input() sentenceS!: Sentence;
 
   @Input() currentSentence!: boolean;
+
+  @Input() currentBackground!: number;
 }
 
 
